@@ -52,9 +52,10 @@
 *,
 ::before,
 ::after {
-  margin    : 0;
-  padding   : 0;
+  margin : 0;
+  padding: 0;
 }
+
 * {
   border                     : none;
   outline                    : none;
@@ -202,14 +203,14 @@ html {
 }
 
 #middle {
-  display         : flex;
-  flex-direction  : column;
-  justify-content : space-between;
-  align-items     : center;
-  text-align      : center;
-  height          : 100vh;
-  max-width       : 90%;
-  margin          : 0 auto;
+  display        : flex;
+  flex-direction : column;
+  justify-content: space-between;
+  align-items    : center;
+  text-align     : center;
+  height         : 100vh;
+  max-width      : 90%;
+  margin         : 0 auto;
 
   @media(min-width: 1024px) {
     max-width: 1024px;
@@ -283,8 +284,9 @@ html {
 }
 
 #middle h2 {
-  font-size  : var(--big-font-size);
-  line-height: var(--big-font-size);
+  font-size    : var(--big-font-size);
+  line-height  : var(--big-font-size);
+  margin-bottom: 1rem;
 }
 
 #middle i {
