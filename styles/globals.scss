@@ -247,10 +247,11 @@ html {
   align-items    : center;
   color          : #fff;
   gap            : 1rem;
-  padding        : 2rem 0;
+  margin         : 2rem 1rem;
 
   @media(min-width: 1024px) {
-    width: 40%;
+    width : 40%;
+    margin: 0rem 0rem;
   }
 }
 
@@ -284,9 +285,9 @@ html {
 }
 
 #middle h2 {
-  font-size    : var(--big-font-size);
-  line-height  : var(--big-font-size);
-  margin-top: 2rem;
+  font-size  : var(--big-font-size);
+  line-height: var(--big-font-size);
+  margin-top : 2rem;
 }
 
 #middle i {
