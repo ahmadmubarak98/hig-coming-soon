@@ -15,7 +15,7 @@
   --extra-big-font-size : 2.8rem;
   --page-title-font-size: 2.5rem;
   --bigger-font-size    : 2rem;
-  --big-font-size       : 2.5rem;
+  --big-font-size       : 1.5rem;
   --h1-font-size        : 1.5rem;
   --h2-font-size        : 1.25rem;
   --normal-font-size    : .938rem;
@@ -84,20 +84,6 @@ html {
   font-family      : 'Montserrat';
   color            : #fff;
   overflow-y       : auto;
-}
-
-.logo {
-  width          : 100%;
-  height         : auto;
-  display        : flex;
-  justify-content: center;
-}
-
-.logo>img {
-  height    : auto;
-  width     : 100%;
-  max-width : 450px;
-  object-fit: contain;
 }
 
 .squares li {
@@ -205,16 +191,31 @@ html {
 #middle {
   display        : flex;
   flex-direction : column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items    : center;
   text-align     : center;
-  height         : 100vh;
+  height         : 100%;
   max-width      : 90%;
   margin         : 0 auto;
+  overflow-y     : auto;
 
   @media(min-width: 1024px) {
     max-width: 1024px;
   }
+}
+
+#middle>.logo {
+  width          : 100%;
+  height         : auto;
+  display        : flex;
+  justify-content: center;
+}
+
+.logo>img {
+  height    : auto;
+  width     : 100%;
+  max-width : 450px;
+  object-fit: contain;
 }
 
 
@@ -251,7 +252,7 @@ html {
 
   @media(min-width: 1024px) {
     width : 40%;
-    margin: 0rem 0rem;
+    margin-top: 3rem;
   }
 }
 
@@ -260,6 +261,7 @@ html {
   padding      : 1rem;
   border-radius: 50%;
   font-size    : 2rem;
+  margin: 0 .5rem;
 }
 
 .countdown-box {
@@ -282,12 +284,13 @@ html {
   color      : #FFFFFF;
   font-size  : var(--h2-font-size);
   line-height: var(--h2-font-size);
+  margin-top : 2rem;
 }
 
 #middle h2 {
   font-size  : var(--big-font-size);
   line-height: var(--big-font-size);
-  margin-top : 2rem;
+  margin-top : 1rem;
 }
 
 #middle i {
