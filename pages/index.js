@@ -7,7 +7,9 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 export default function Home() {
   return (
     <>
-      <ul class="squares">
+    <h1>Service Temporarily Unavailable</h1>
+    <p>The server is temporarily unable to service your request due to maintenance downtime or capacity problems. Please try again later.</p>
+      {/* <ul class="squares">
         <li></li>
         <li></li>
         <li></li>
@@ -40,7 +42,7 @@ export default function Home() {
           <FontAwesomeIcon icon={faTwitter} />
           <FontAwesomeIcon icon={faFacebook} />
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
